@@ -366,30 +366,30 @@ Work Shop
   padding: 20px 0px 0px; }
 
 /***********************************
-Mentor Team
+scholarship
 ************************************/
-.pm-staff-profile-image {
+.pm-scholarship-image {
   width: 150px;
   height: 150px;
   background-color: #C6C6C6;
   border-radius: 50%;
   display: inline-block; }
 
-.pm-staff-profile-details {
+.pm-scholarship-details {
   padding: 20px 20px; }
 
-.pm-staff-profile-name {
+.pm-scholarship-name {
   font-size: 24px;
   text-transform: capitalize;
   color: #2b5d83; }
 
-.pm-staff-profile-title {
+.pm-scholarship-title {
   text-transform: capitalize;
   color: #4b4b4b;
   font-weight: 500;
   padding: 12px 0px; }
 
-.pm-staff-profile-bio {
+.pm-scholarship-about {
   text-transform: capitalize;
   color: #4b4b4b;
   font-weight: 100; }
