@@ -6,26 +6,359 @@
     <meta name="viewport"
           content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <!-- Use the title from a page's frontmatter if it has one -->
-    <title>Welcome to Middleman</title>
+    <title>Epsilon Tau Pi Foundation</title>
+    <link href="/ETPFoundationWebsite/stylesheets/bootstrap.min.css" rel="stylesheet" />
+    <link href="/ETPFoundationWebsite/stylesheets/font-awesome.min.css" rel="stylesheet" />
+    <link href="/ETPFoundationWebsite/stylesheets/imagehover.min.css" rel="stylesheet" />
     <link href="/ETPFoundationWebsite/stylesheets/site.css" rel="stylesheet" />
-    <script src="/ETPFoundationWebsite/javascripts/site.js"></script>
+    <script src="/ETPFoundationWebsite/javascripts/jquery.min.js"></script>
+    <script src="/ETPFoundationWebsite/javascripts/jquery.easing.min.js"></script>
+    <script src="/ETPFoundationWebsite/javascripts/bootstrap.min.js"></script>
+    <script src="/ETPFoundationWebsite/javascripts/custom.js"></script>
+
   </head>
   <body>
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 340" class="middleman-logo" aria-labelledby="middleman-logo__title" role="img">
-  <title id="middleman-logo__title">Middleman</title>
-  <path class="middleman-logo__top-left-bar" fill-opacity=".45" d="M0 40L200 0v30L0 60z"/>
-  <path class="middleman-logo__top-right-bar" fill="#fff" d="M200 0l200 40v20L200 30z"/>
-  <path class="middleman-logo__left-m" fill-opacity=".45" d="M0 78v184l45 5V152l45 83 47-83v129l53 7V52l-57 8-43 83-43-70z"/>
-  <path class="middleman-logo__right-m" fill="#fff" d="M400 78v184l-45 5V152l-45 83-47-83v129l-53 7V52l57 8 43 83 43-70z"/>
-  <path class="middleman-logo__bottom-left-bar" fill-opacity=".45" d="M0 300l200 40v-30L0 280z"/>
-  <path class="middleman-logo__bottom-right-bar" fill="#fff" d="M200 340l200-40v-20l-200 30z"/>
-</svg>
-
-<h1>
-  Middleman is Running
-</h1>
-
-<a href="https://middlemanapp.com/basics/templating_language/" target="_blank">Read Documentation</a>
-
+  <nav class="navbar navbar-default navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="index.html">Epsilon Tau Pi Foundation</a>
+        </div>
+        <div class="collapse navbar-collapse" id="myNavbar">
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="#feature">About Us</a></li>
+          <li><a href="#organisations">Scholarship</a></li>
+          <li><a href="#courses">Donate</a></li>
+        </ul>
+        </div>
+      </div>
+    </nav>
+        <!--Banner-->
+    <div class="banner">
+      <div class="bg-color">
+        <div class="container">
+          <div class="row">
+            <div class="banner-text text-center">
+              <div class="text-border">
+                <h2 class="text-dec">Trust & Quality</h2>
+              </div>
+              <div class="intro-para text-center quote">
+                <p class="big-text">Learning Today . . . Leading Tomorrow.</p>
+                <p class="small-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium enim repellat sapiente quos architecto<br>Laudantium enim repellat sapiente quos architecto</p>
+                <a href="#footer" class="btn get-quote">GET A QUOTE</a>
+              </div>
+              <a href="#feature" class="mouse-hover"><div class="mouse"></div></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--/ Banner-->
+    <!--Feature-->
+    <section id ="feature" class="section-padding">
+      <div class="container">
+        <div class="row">
+          <div class="header-section text-center">
+            <h2>Features</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem nesciunt vitae,<br> maiores, magni dolorum aliquam.</p>
+            <hr class="bottom-line">
+          </div>
+          <div class="feature-info">
+            <div class="fea">
+              <div class="col-md-4">
+                <div class="heading pull-right">
+                  <h4>Latest Technologies</h4>
+                  <p>Donec et lectus bibendum dolor dictum auctor in ac erat. Vestibulum egestas sollicitudin metus non urna in eros tincidunt convallis id id nisi in interdum.</p>
+                </div>
+                <div class="fea-img pull-left">
+                  <i class="fa fa-css3"></i>
+                </div>
+              </div>
+            </div>
+            <div class="fea">
+              <div class="col-md-4">
+                <div class="heading pull-right">
+                  <h4>Toons Background</h4>
+                  <p>Donec et lectus bibendum dolor dictum auctor in ac erat. Vestibulum egestas sollicitudin metus non urna in eros tincidunt convallis id id nisi in interdum.</p>
+                </div>
+                <div class="fea-img pull-left">
+                  <i class="fa fa-drupal"></i>
+                </div>
+              </div>
+            </div>
+            <div class="fea">
+              <div class="col-md-4">
+                <div class="heading pull-right">
+                  <h4>Award Winning Design</h4>
+                  <p>Donec et lectus bibendum dolor dictum auctor in ac erat. Vestibulum egestas sollicitudin metus non urna in eros tincidunt convallis id id nisi in interdum.</p>
+                </div>
+                <div class="fea-img pull-left">
+                  <i class="fa fa-trophy"></i>
+                </div>
+              </div>
+            </div>
+        </div>
+        </div>
+      </div>
+    </section>
+    <!--/ feature-->
+    <!--Organisations-->
+    <section id ="organisations" class="section-padding">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">         
+              <div class="orga-stru">
+                <h3>65%</h3>
+                <p>Say NO!!</p>
+                <i class="fa fa-male"></i>
+              </div>  
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">         
+              <div class="orga-stru">
+                <h3>20%</h3>
+                <p>Says Yes!!</p>
+                <i class="fa fa-male"></i>
+              </div>  
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">         
+              <div class="orga-stru">
+                <h3>15%</h3>
+                <p>Can't Say!!</p>
+                <i class="fa fa-male"></i>
+              </div>  
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="detail-info">
+              <hgroup>
+                <h3 class="det-txt"> Is inclusive quality education affordable?</h3>
+                <h4 class="sm-txt">(Revised and Updated for 2016)</h4>
+              </hgroup>
+              <p class="det-p">Donec et lectus bibendum dolor dictum auctor in ac erat. Vestibulum egestas sollicitudin metus non urna in eros tincidunt convallis id id nisi in interdum.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--/ Organisations-->
+    <!--Cta-->
+    <section id="cta-2">
+      <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+              <h2 class="text-center">Subscribe Now</h2>
+              <p class="cta-2-txt">Sign up for our free weekly software design courses, we’ll send them right to your inbox.</p>
+             <div class="cta-2-form text-center">
+              <form action="#" method="post" id="workshop-newsletter-form">
+                    <input name="" placeholder="Enter Your Email Address" type="email">
+                    <input class="cta-2-form-submit-btn" value="Subscribe" type="submit">
+                </form>
+             </div>   
+            </div>
+        </div>
+      </div>
+    </section>
+    <!--/ Cta-->
+    <!--work-shop-->
+    <section id="work-shop" class="section-padding">
+      <div class="container">
+        <div class="row">
+          <div class="header-section text-center">
+            <h2>Upcoming Workshop</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem nesciunt vitae,<br> maiores, magni dolorum aliquam.</p>
+            <hr class="bottom-line">
+          </div>
+          <div class="col-md-4 col-sm-6">
+            <div class="service-box text-center">
+              <div class="icon-box">
+                <i class="fa fa-html5 color-green"></i>
+              </div>
+              <div class="icon-text">
+                <h4 class="ser-text">Mentor HTML5 Workshop</h4>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-6">
+            <div class="service-box text-center">
+              <div class="icon-box">
+                <i class="fa fa-css3 color-green"></i>
+              </div>
+              <div class="icon-text">
+                <h4 class="ser-text">Mentor CSS3 Workshop</h4>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-6">
+            <div class="service-box text-center">
+              <div class="icon-box">
+                <i class="fa fa-joomla color-green"></i>
+              </div>
+              <div class="icon-text">
+                <h4 class="ser-text">Mentor Joomla Workshop</h4>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--/ work-shop-->
+    <!--Faculity member-->
+    <section id="faculity-member" class="section-padding">
+      <div class="container">
+        <div class="row">
+          <div class="header-section text-center">
+            <h2>Meet Our Faculty Member</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem nesciunt vitae,<br> maiores, magni dolorum aliquam.</p>
+            <hr class="bottom-line">
+          </div>
+          <div class="col-lg-4 col-md-4 col-sm-4">
+            <div class="pm-staff-profile-container" >
+              <div class="pm-staff-profile-image-wrapper text-center">
+                <div class="pm-staff-profile-image">
+                  <img src="images/mentor.jpg" alt="" class="img-thumbnail img-circle" />
+                </div>   
+              </div>                                
+              <div class="pm-staff-profile-details text-center">  
+                <p class="pm-staff-profile-name">Bryan Johnson</p>
+                <p class="pm-staff-profile-title">Lead Software Engineer</p>
+                
+                <p class="pm-staff-profile-bio">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec et placerat dui. In posuere metus et elit placerat tristique. Maecenas eu est in sem ullamcorper tincidunt. </p>
+              </div>     
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-4 col-sm-4">
+            <div class="pm-staff-profile-container" >
+              <div class="pm-staff-profile-image-wrapper text-center">
+                <div class="pm-staff-profile-image">
+                  <img src="images/mentor.jpg" alt="" class="img-thumbnail img-circle" />
+                </div>   
+              </div>                                
+              <div class="pm-staff-profile-details text-center">  
+                <p class="pm-staff-profile-name">Bryan Johnson</p>
+                <p class="pm-staff-profile-title">Lead Software Engineer</p>
+                
+                <p class="pm-staff-profile-bio">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec et placerat dui. In posuere metus et elit placerat tristique. Maecenas eu est in sem ullamcorper tincidunt. </p>
+              </div>     
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-4 col-sm-4">
+            <div class="pm-staff-profile-container" >
+              <div class="pm-staff-profile-image-wrapper text-center">
+                <div class="pm-staff-profile-image">
+                    <img src="images/mentor.jpg" alt="" class="img-thumbnail img-circle" />
+                </div>   
+              </div>                                
+              <div class="pm-staff-profile-details text-center">  
+                <p class="pm-staff-profile-name">Bryan Johnson</p>
+                <p class="pm-staff-profile-title">Lead Software Engineer</p>
+                
+                <p class="pm-staff-profile-bio">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec et placerat dui. In posuere metus et elit placerat tristique. Maecenas eu est in sem ullamcorper tincidunt. </p>
+              </div>     
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--/ Faculity member-->
+    <!--Testimonial-->
+    <section id="testimonial" class="section-padding">
+      <div class="container">
+        <div class="row">
+          <div class="header-section text-center">
+            <h2 class="white">See What Our Customer Are Saying?</h2>
+            <p class="white">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem nesciunt vitae,<br> maiores, magni dolorum aliquam.</p>
+            <hr class="bottom-line bg-white">
+          </div>
+          <div class="col-md-6 col-sm-6">
+            <div class="text-comment">
+              <p class="text-par">"Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, nec sagittis sem"</p>
+              <p class="text-name">Abraham Doe - Creative Dırector</p>
+            </div>
+          </div>
+          <div class="col-md-6 col-sm-6">
+            <div class="text-comment">
+              <p class="text-par">"Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, nec sagittis sem"</p>
+              <p class="text-name">Abraham Doe - Creative Dırector</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--/ Testimonial-->
+    <!--Donate-->
+    <section id ="donate" class="section-padding">
+      <div class="container">
+        <div class="row">
+          <div class="header-section text-center">
+            <h2>Donate</h2>
+            <hr class="bottom-line">
+          </div>
+        </div>
+        <script src="https://donorbox.org/widget.js" type="text/javascript"></script>
+        <iframe src="https://donorbox.org/embed/soaring-eagle-scholarship?amount=30" height="685px" width="100%" style="max-width:500px; min-width:310px; max-height:none!important;margin:auto;display:block;" seamless="seamless" id="dbox-form-embed" name="donorbox" frameborder="0" scrolling="no"></iframe>
+      </div>
+    </section>
+    <!--/ Donate-->
+    <!--Contact-->
+    <section id ="contact" class="section-padding">
+      <div class="container">
+        <div class="row">
+          <div class="header-section text-center">
+            <h2>Contact Us</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem nesciunt vitae,<br> maiores, magni dolorum aliquam.</p>
+            <hr class="bottom-line">
+          </div>
+          <div id="sendmessage">Your message has been sent. Thank you!</div>
+          <div id="errormessage"></div>
+          <form action="" method="post" role="form" class="contactForm">
+              <div class="col-md-6 col-sm-6 col-xs-12 left">
+                <div class="form-group">
+                    <input type="text" name="name" class="form-control form" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
+                    <div class="validation"></div>
+                </div>
+                <div class="form-group">
+                    <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email" />
+                    <div class="validation"></div>
+                </div>
+                <div class="form-group">
+                    <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
+                    <div class="validation"></div>
+                </div>
+              </div>
+              
+              <div class="col-md-6 col-sm-6 col-xs-12 right">
+                <div class="form-group">
+                    <textarea class="form-control" name="message" rows="5" data-rule="required" data-msg="Please write something for us" placeholder="Message"></textarea>
+                    <div class="validation"></div>
+                </div>
+              </div>
+              
+              <div class="col-xs-12">
+                <!-- Button -->
+                <button type="submit" id="submit" name="submit" class="form contact-form-button light-form-button oswald light">SEND EMAIL</button>
+              </div>
+          </form>
+          
+        </div>
+      </div>
+    </section>
+    <!--/ Contact-->
+    <footer id="footer" class="footer">
+      <div class="container text-center" style="margin-top: -6em;">
+      <ul class="social-links">
+        <li><a href="#link"><i class="fa fa-twitter fa-fw"></i></a></li>
+        <li><a href="#link"><i class="fa fa-facebook fa-fw"></i></a></li>
+        <li><a href="#link"><i class="fa fa-google-plus fa-fw"></i></a></li>
+        <li><a href="#link"><i class="fa fa-dribbble fa-fw"></i></a></li>
+        <li><a href="#link"><i class="fa fa-linkedin fa-fw"></i></a></li>
+      </ul>
+        &copy; 2017 Epsilon Tau Pi Foundation, Inc. - All Rights Reserved
+      </div>
+    </footer>
   </body>
 </html>
