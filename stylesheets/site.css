@@ -101,13 +101,13 @@ Navigation bar
 Banner
 ************************************/
 .banner {
-  background: url("../images/bg-banner.jpg") no-repeat center top;
+  background: url("../images/banner.svg") no-repeat center top;
   background-size: cover;
   min-height: 580px;
   position: relative; }
 
 .bg-color {
-  background-color: RGBA(12, 11, 11, 0.82);
+  background-color: RGBA(12, 11, 11, 0.55);
   min-height: 580px; }
 
 .text-dec {
