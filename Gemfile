@@ -7,3 +7,5 @@ gem 'wdm', '~> 0.1', platforms: [:mswin, :mingw]
 
 gem 'middleman-deploy', '~> 2.0.0.pre.alpha'
 gem "middleman-favicon-maker", "~> 4.0"
+
+
