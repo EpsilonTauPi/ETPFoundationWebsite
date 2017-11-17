@@ -22,7 +22,7 @@ table {
   border-spacing: 0; }
 
 .section-padding {
-  padding: 60px 0px; }
+  padding: 40px 0px 0px 0px; }
 
 h1, h2, h3, h4, h5, h6 {
   font-family: Open Sans, sans-serif;
@@ -82,9 +82,18 @@ Navigation bar
   text-transform: uppercase;
   padding: 0px;
   height: inherit;
-  font-size: 2em;
-  margin: 20px 0px; }
+  font-size: .8em;
+  margin: 20px 20px; }
 
+@media only screen and (min-width: 360px) {
+  .navbar-default .navbar-brand {
+    font-size: 1em; } }
+@media only screen and (min-width: 768px) {
+  .navbar-default .navbar-brand {
+    font-size: 1.5em; } }
+@media only screen and (min-width: 1024px) {
+  .navbar-default .navbar-brand {
+    font-size: 2em; } }
 .navbar-default .navbar-brand span {
   font-weight: 100 !important; }
 
@@ -101,15 +110,23 @@ Navigation bar
 Banner
 ************************************/
 .banner {
-  background: url("../images/banner.svg") no-repeat center top;
-  background-size: cover;
-  min-height: 580px;
-  position: relative; }
+  background: url("../images/banner.svg") no-repeat center;
+  background-size: contain;
+  min-height: 240px;
+  position: relative;
+  margin-top: 60px; }
 
 .bg-color {
   background-color: RGBA(12, 11, 11, 0.55);
-  min-height: 580px; }
+  min-height: 240px;
+  margin-top: 60px; }
 
+@media only screen and (min-width: 400px) {
+  .banner, .bg-color {
+    min-height: 340px; } }
+@media only screen and (min-width: 768px) {
+  .banner, .bg-color {
+    min-height: 540px; } }
 .text-dec {
   font-size: 24px;
   padding: 10px 20px;
@@ -175,7 +192,7 @@ Banner
   animation-name: rotateplane;
   animation-duration: 2s;
   -webkit-animation-iteration-count: infinite;
-          animation-iteration-count: infinite; }
+  animation-iteration-count: infinite; }
 
 .modal-content h4 {
   font-size: 1.5em;
@@ -353,7 +370,7 @@ Work Shop
   background: #fff;
   padding: 60px 30px 80px;
   -webkit-box-shadow: 0px 0px 1px 1px rgba(0, 0, 0, 0.1);
-          box-shadow: 0px 0px 1px 1px rgba(0, 0, 0, 0.1); }
+  box-shadow: 0px 0px 1px 1px rgba(0, 0, 0, 0.1); }
 
 .icon-box i {
   color: #6FB5D4;
@@ -426,7 +443,7 @@ Price Table
 ************************************/
 .price-table {
   -webkit-box-shadow: 0px 0px 1px 0px RGBA(0, 0, 0, 0.4);
-          box-shadow: 0px 0px 1px 0px RGBA(0, 0, 0, 0.4);
+  box-shadow: 0px 0px 1px 0px RGBA(0, 0, 0, 0.4);
   position: relative; }
 
 .price-table .pricing-head {
@@ -484,11 +501,6 @@ Contact Us
   margin-bottom: 15px;
   border-radius: 0; }
 
-.textarea {
-  height: 228px;
-  max-width: 100%;
-  max-height: 229px; }
-
 .light {
   font-weight: 100; }
 
@@ -523,13 +535,101 @@ Contact Us
 #sendmessage.show, #errormessage.show, .show {
   display: block; }
 
+form {
+  margin: 10px auto;
+  max-width: 500px;
+  padding: 20px 12px 10px 20px;
+  font: 13px; }
+
+form li {
+  padding: 0;
+  display: block;
+  list-style: none;
+  margin: 10px 0 0 0; }
+
+form label {
+  margin: 0 0 3px 0;
+  padding: 10px;
+  display: block;
+  font-weight: bold;
+  text-align: left; }
+
+form input[type=text],
+form input[type=date],
+form input[type=datetime],
+form input[type=number],
+form input[type=search],
+form input[type=time],
+form input[type=url],
+form input[type=email],
+textarea,
+select {
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  border: 1px solid #BEBEBE;
+  padding: 7px;
+  margin: 0px;
+  width: 100%;
+  -webkit-transition: all 0.30s ease-in-out;
+  -moz-transition: all 0.30s ease-in-out;
+  -ms-transition: all 0.30s ease-in-out;
+  -o-transition: all 0.30s ease-in-out;
+  outline: none;
+  text-align: left; }
+
+textarea {
+  height: 180px; }
+
+form input[type=text]:focus,
+form input[type=date]:focus,
+form input[type=datetime]:focus,
+form input[type=number]:focus,
+form input[type=search]:focus,
+form input[type=time]:focus,
+form input[type=url]:focus,
+form input[type=email]:focus,
+form textarea:focus,
+form select:focus {
+  -webkit-box-shadow: 0 0 8px #88D5E9;
+  box-shadow: 0 0 8px #88D5E9;
+  border: 1px solid #88D5E9; }
+
+form .field-divided {
+  width: 49%; }
+
+form .field-long {
+  width: 100%; }
+
+form .field-select {
+  width: 100%; }
+
+form .field-textarea {
+  height: 100px; }
+
+form input[type=submit], form input[type=button] {
+  background: #4B99AD;
+  padding: 8px 15px 8px 15px;
+  border: none;
+  color: #fff; }
+
+form input[type=submit]:hover, form input[type=button]:hover {
+  background: #4691A4;
+  box-shadow: none;
+  -moz-box-shadow: none;
+  -webkit-box-shadow: none; }
+
+form .required {
+  color: red; }
+
 /***********************************
 Footer
 ************************************/
 .footer {
   padding: 60px 0 20px;
   background: #111;
-  color: #ccc; }
+  color: #ccc;
+  text-align: center; }
 
 .footer a {
   color: #fff; }
@@ -646,7 +746,7 @@ Footer
 
 .footer .form-control:focus {
   -webkit-box-shadow: none;
-          box-shadow: none; }
+  box-shadow: none; }
 
 /***********************************
 ************************************
@@ -744,3 +844,16 @@ Responsive media queries
 
   .navbar-default .navbar-nav > li > a {
     text-align: center; } }
+/***********************************
+Bootsrap modifications
+************************************/
+.row {
+  padding: 15px; }
+
+/***********************************
+Donor box
+************************************/
+iframe#dbox-form-embed {
+  max-width: 425px !important;
+  margin: auto;
+  display: block; }
